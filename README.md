@@ -46,6 +46,11 @@ Run the application on local device or emulator by executing:
 
 The HSL Regional Application will collect user's location data through Firebase Analytics and determine the user's region.
 Customization of colors and texts will be automatically applied using Firebase Remote Config based on the user's region.
+You can change the remote configs from following link:
+
+- https://console.firebase.google.com/project/regionalapp-4a6d3/config
+
+Before using above URL, please contact sidath.r@hsenidlanka.com to add you to firebase project. 
 
 ## Android app
 
