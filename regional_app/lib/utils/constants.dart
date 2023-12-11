@@ -61,9 +61,16 @@ class ApplicationConstants{
     }
   }
 
+  String getButtonText() {
+    return DefaultValues().buttonText;
+  }
+
   String getTextFont() {
     return _remoteConfig.getString('text_font').isNotEmpty ? _remoteConfig.getString('text_font') : DefaultValues().textFont;
   }
+
+  static const String PREF_BUTTON = "buttonSuccess";
+  static const String PREF_SUCCESS = "Success";
 
 }
 
@@ -73,5 +80,24 @@ class DefaultValues{
   Color textColor = Colors.black;
   String appBarTitle = "Unknown";
   String sizedBoxText = "Your current region is unknown";
+  String buttonText = "VALIDATE";
+  String textFont = "arial";
+}
+
+class SuccessfulScreen{
+  Color appBarColor = Colors.black;
+  Color appColor = Colors.black;
+  Color textColor = Colors.amber;
+  String appBarTitle = "Success";
+  String sizedBoxText = "After app update local storage data still there.";
+  String textFont = "arial";
+}
+
+class FailureScreen{
+  Color appBarColor = Colors.deepPurple;
+  Color appColor = Colors.deepPurple;
+  Color textColor = Colors.white;
+  String appBarTitle = "Failure";
+  String sizedBoxText = "After app update local storage data not there.";
   String textFont = "arial";
 }
